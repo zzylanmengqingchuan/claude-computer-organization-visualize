@@ -6,17 +6,23 @@ A Claude Code Skill that distills visualization capability into interactive teac
 
 ## Demo
 
-**Static hardware diagrams with SVG:**
+[From the Principle of Locality to Three Mapping Strategies, Replacement Algorithms, and Write Policies](https://dkfile.istester.com/zzy/cache_overview.html)
 
-![Static web demo](images/static-web-demo.png)
+Memory hierarchy:
 
-**Interactive step-by-step animations:**
+![image-20260503212742160](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212742160.png?imageSlim)
 
-![Interactive animation demo](images/interactive-animation-demo.gif)
+Cache internal structure:
 
-![Interactive animation demo 2](images/interactive-animation-demo-2.gif)
+![image-20260503212818882](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212818882.png?imageSlim)
 
-[Live Demo](https://l0dyv.github.io/claude-algo-visualize/references/cache_overview.html) — Cache memory full reference
+Direct mapping:
+
+![image-20260503212919983](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212919983.png?imageSlim)
+
+Step-by-step animation:
+
+![image-20260503212939890](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212939890.png?imageSlim)
 
 ## Features
 

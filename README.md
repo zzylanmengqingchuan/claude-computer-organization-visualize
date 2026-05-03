@@ -6,17 +6,23 @@
 
 ## 示例
 
-**静态内容与 SVG 硬件图示：**
+[从局部性原理到三种映射方式、替换算法与写策略](https://dkfile.istester.com/zzy/cache_overview.html)
 
-![静态网页示例](images/static-web-demo.png)
+存储层次结构：
 
-**交互式逐步动画：**
+![image-20260503212742160](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212742160.png?imageSlim)
 
-![交互动画示例](images/interactive-animation-demo.gif)
+ca che内部的结构：
 
-![交互动画示例 2](images/interactive-animation-demo-2.gif)
+![image-20260503212818882](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212818882.png?imageSlim)
 
-[Live Demo](https://l0dyv.github.io/claude-algo-visualize/references/cache_overview.html) — Cache 全景参考实现
+直接映射：
+
+![image-20260503212919983](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212919983.png?imageSlim)
+
+动画演示：
+
+![image-20260503212939890](https://zzy-1326340203.cos.ap-beijing.myqcloud.com//image-20260503212939890.png?imageSlim)
 
 ## 功能
 
