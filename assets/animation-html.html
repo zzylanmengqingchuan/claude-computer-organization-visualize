@@ -1,0 +1,98 @@
+<!--
+  三种动画 HTML 结构骨架。
+  按场景选一个复制，替换所有 xx-* id 为你的实际前缀（如 heap-push-svg / heap-push-arr 等）。
+  对应的 render/steps 在 assets/boilerplate.js 里选相应模板。
+-->
+
+
+<!-- ============================================================ -->
+<!-- 结构 1：代码面板 + SVG 树 + 数组（需同步展示伪代码/微操作时使用） -->
+<!-- 搭配 assets/boilerplate.js 的模板 A + hlLines                    -->
+<!-- 适用：带微操作步骤的数据通路演示、哈夫曼编码构建过程              -->
+<!-- ============================================================ -->
+<div class="w">
+  <div class="code-panel" id="xx-code">
+    <div class="cl">int Find(int S[], int x) {</div>
+    <div class="cl">    if (S[x] &lt; 0) return x;</div>
+    <div class="cl">    S[x] = Find(S, S[x]);</div>
+    <div class="cl">    return S[x];</div>
+    <div class="cl">}</div>
+  </div>
+  <svg id="xx-svg" width="100%" viewBox="0 0 700 260"></svg>
+  <div class="albl">数组视角：</div>
+  <div class="aw"><div class="ar" id="xx-arr"></div></div>
+  <div class="ctrl">
+    <button class="btn" id="xx-pb" onclick="go(-1)">上一步</button>
+    <div class="dots" id="xx-dots"></div>
+    <button class="btn" id="xx-nb" onclick="go(1)">下一步</button>
+  </div>
+  <div class="cap" id="xx-cap"></div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- 结构 2：SVG 图 + 数组（无代码面板）                            -->
+<!-- 搭配 assets/boilerplate.js 的模板 A 或 B                       -->
+<!-- 适用：数据通路 SVG 演示、总线仲裁流程、中断响应状态图           -->
+<!-- ============================================================ -->
+<div class="w">
+  <svg id="xx-svg" width="100%" viewBox="0 0 700 260"></svg>
+  <div class="albl">数组视角：</div>
+  <div class="aw"><div class="ar" id="xx-arr"></div></div>
+  <div class="ctrl">
+    <button class="btn" id="xx-pb" onclick="go(-1)">上一步</button>
+    <div class="dots" id="xx-dots"></div>
+    <button class="btn" id="xx-nb" onclick="go(1)">下一步</button>
+  </div>
+  <div class="cap" id="xx-cap"></div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- 结构 3：只有数组（线性序列视图）                               -->
+<!-- 搭配 assets/boilerplate.js 的模板 C                            -->
+<!-- 适用：Cache 访问地址序列、DMA 数据块传输、寄存器堆读写序列      -->
+<!-- ============================================================ -->
+<div class="w">
+  <div class="aw"><div class="ar" id="xx-arr"></div></div>
+  <div class="ctrl">
+    <button class="btn" id="xx-pb" onclick="go(-1)">上一步</button>
+    <div class="dots" id="xx-dots"></div>
+    <button class="btn" id="xx-nb" onclick="go(1)">下一步</button>
+  </div>
+  <div class="cap" id="xx-cap"></div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- 结构 4：流水线时序表（计组专用）                               -->
+<!-- 搭配 assets/boilerplate.js 的模板 D                            -->
+<!-- 使用场景：指令流水线执行、停顿（stall）演示、冒险处理分析       -->
+<!-- 替换前缀示例：xx-tbl → pipe-tbl, xx-cap → pipe-cap 等          -->
+<!-- ============================================================ -->
+<div class="w">
+  <div style="overflow-x:auto" id="xx-tbl"></div>
+  <div class="ctrl">
+    <button class="btn" id="xx-pb" onclick="go(-1)">上一步</button>
+    <div class="dots" id="xx-dots"></div>
+    <button class="btn" id="xx-nb" onclick="go(1)">下一步</button>
+  </div>
+  <div class="cap" id="xx-cap"></div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- 结构 5：位级寄存器行（计组专用）                               -->
+<!-- 搭配 assets/boilerplate.js 的模板 E                            -->
+<!-- 使用场景：补码/原码/反码/移码、IEEE 754 浮点数、地址字段分解    -->
+<!-- 替换前缀示例：xx-bits → fp-bits, xx-cap → fp-cap 等            -->
+<!-- ============================================================ -->
+<div class="w">
+  <div id="xx-bits"></div>
+  <div class="ctrl">
+    <button class="btn" id="xx-pb" onclick="go(-1)">上一步</button>
+    <div class="dots" id="xx-dots"></div>
+    <button class="btn" id="xx-nb" onclick="go(1)">下一步</button>
+  </div>
+  <div class="cap" id="xx-cap"></div>
+</div>
